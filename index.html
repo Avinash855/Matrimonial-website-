@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifePartner.com Matrimony Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .welcome-message {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        LifePartner.com Matrimony Website
+    </header>
+
+    <div class="welcome-message">
+        <h2>Welcome to LifePartner.com</h2>
+        <p>Your perfect life partner is just a click away. Start your journey today!</p>
+    </div>
+
+    <div class="container">
+        <h1>Register Your Profile</h1>
+        <form>
+            <!-- Hobbies -->
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="e.g., Reading, Traveling" list="hobbiesList">
+            <datalist id="hobbiesList">
+                <option value="Reading">
+                <option value="Traveling">
+                <option value="Cooking">
+                <option value="Music">
+                <option value="Photography">
+            </datalist>
+
+            <!-- Education -->
+            <label for="education">Education:</label>
+            <select id="education" name="education" required>
+                <option value="">Select Education</option>
+                <option value="10th Grade">10th Grade</option>
+                <option value="12th Grade">12th Grade</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Employment -->
+            <label for="employment">Employment:</label>
+            <select id="employment" name="employment" required>
+                <option value="">Select Employment</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Civil Engineer">Civil Engineer</option>
+                <option value="Government Employee">Government Employee</option>
+                <option value="HR Manager">HR Manager</option>
+                <option value="Marketing Manager">Marketing Manager</option>
+                <option value="Bank Manager">Bank Manager</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Annual Income -->
+            <label for="annual_income">Annual Income:</label>
+            <select id="annual_income" name="annual_income" required>
+                <option value="">Select Annual Income</option>
+                <option value="Below ₹3 LPA">Below ₹3 LPA</option>
+                <option value="₹3-5 LPA">₹3-5 LPA</option>
+                <option value="₹5-7 LPA">₹5-7 LPA</option>
+                <option value="₹7-10 LPA">₹7-10 LPA</option>
+                <option value="₹10-15 LPA">₹10-15 LPA</option>
+                <option value="₹15-20 LPA">₹15-20 LPA</option>
+                <option value="₹20-25 LPA">₹20-25 LPA</option>
+                <option value="₹25-30 LPA">₹25-30 LPA</option>
+                <option value="₹30-50 LPA">₹30-50 LPA</option>
+                <option value="Above ₹50 LPA">Above ₹50 LPA</option>
+            </select>
+
+            <!-- Height -->
+            <label for="height">Height:</label>
+            <select id="height" name="height" required>
+                <option value="">Select Height</option>
+                <option value="4'5 - 4'9">4'5 - 4'9</option>
+                <option value="4'10 - 5'2">4'10 - 5'2</option>
+                <option value="5'3 - 5'7">5'3 - 5'7</option>
+                <option value="5'8 - 6'0">5'8 - 6'0</option>
+                <option value="Above 6'0">Above 6'0</option>
+            </select>
+
+            <!-- Weight -->
+            <label for="weight">Weight:</label>
+            <select id="weight" name="weight" required>
+                <option value="">Select Weight</option>
+                <option value="40-50 kg">40-50 kg</option>
+                <option value="51-60 kg">51-60 kg</option>
+                <option value="61-70 kg">61-70 kg</option>
+                <option value="71-80 kg">71-80 kg</option>
+                <option value="Above 80 kg">Above 80 kg</option>
+            </select>
+
+            <!-- Family Details -->
+            <h2>Family Details</h2>
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" placeholder="e.g., Mr. John Doe">
+
+            <label for="father_occupation">Father's Occupation:</label>
+            <input type="text" id="father_occupation" name="father_occupation" placeholder="e.g., Businessman">
+
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" placeholder="e.g., Mrs. Jane Doe">
+
+            <label for="mother_occupation">Mother's Occupation:</label>
+            <input type="text" id="mother_occupation" name="mother_occupation" placeholder="e.g., Housewife">
+
+            <!-- Siblings Details -->
+            <h2>Siblings Details</h2>
+            <label for="brother_count">Number of Brothers:</label>
+            <input type="number" id="brother_count" name="brother_count" placeholder="e.g., 1">
+
+            <label for="sister_count">Number of Sisters:</label>
+            <input type="number" id="sister_count" name="sister_count" placeholder="e.g., 1">
+
+            <!-- Location Details -->
+            <h2>Location Details</h2>
+            <label for="state">State:</label>
+            <select id="state" name="state" required onchange="updateCities()">
+                <option value="">Select State</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="">Select City</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function updateCities() {
+            const state = document.getElementById('state').value;
+            const cityDropdown = document.getElementById('city');
+            cityDropdown.innerHTML = "<option value=''>Select City</option>";
+
+            const cities = {
+                "Uttar Pradesh": [
+                    "Lucknow", "Kanpur", "Agra", "Varanasi", "Meerut", "Allahabad (Prayagraj)", "Ghaziabad", "Mathura", "Aligarh"
+                ]
+            };
+
+            if (cities[state]) {
+                cities[state].forEach(city => {
+                    const option = document.createElement("option");
+                    option.value = city;
+                    option.textContent = city;
+                    cityDropdown.appendChild(option);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
